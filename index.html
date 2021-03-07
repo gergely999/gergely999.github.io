@@ -6,17 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/pages/product.html">Products</a></li>
-    <li><a href="/pages/orders.html">Orders</a></li>
-    <li><a href="/about.html">About</a></li>
+<ul class="menu">
+    <li> <a href="/">Home</a></li>
+    <li><a id="login-link" href="/login.html">Login</a></li>
+    <li> <a href="/pages/product.html">Products</a></li>
+    <li> <a href="/pages/orders.html">Orders</a></li>
+    <li class="right"><a href="/about.html">About</a></li>
 
 </ul>
 
 <body>
     <h1>Fantastic Burger</h1>
+    <div class="container">
+
+        <fieldset>
+            <legend>Személyes adatok</legend>
+        
+
+        <div>
+            <label>Név: *</label>
+            <input id="name" name="name" type="text" required>
+        </div>
+        <div>
+            <label>Email cím: *</label>
+            <input id="email" name="email" type="email" required>
+        </div>
+        <div>
+            <label>Lakcím: *</label>
+            <input id="address" name="address" type="address" required>
+        </div>
+        <div>
+            <label>Megjegyzés:</label>
+            <textarea name="comment" id="comment" rows="4"></textarea>
+        </div>
+    </div>
+</fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Termék adatai:</legend>
+    
+    <span>Extra feltét:</span>
+    <div>
+        <input checked id="nothing" type="radio" name="extra" value="0">
+        <label for="nothing">Nem kérek</label>
+    </div>
+    <div>
+        <input id="cheese" type="radio" name="extra" value="300">
+        <label for="cheese">Cheese</label>
+    </div>
+    <div>
+        <input id="double-cheese" type="radio" name="extra" value="300">
+        <label for="double-cheese">Double cheese</label>
+    </div>
 
     <ul>
         <li>Meat lover</li>
@@ -31,11 +77,65 @@
         <li>Give your address</li>
         <li>Eat it</li>
     </ol>
+</fieldset>
+
+    <p>Images</p>
+    <div class="img-div">
+        <img id="img-1" src="img/programmer.jpeg" alt="programmer">
+    </div>
+
+    <h3 id="bio_header">Bio</h3>
+    <p class="content">
+        <span class="bold">John Doe.</span>
+    <div></div> He is a programmer.
+
+    </p>
+    <h3 id="skills_header">Skills</h3>
+    <p class="content">
+        Nam posuere non enim at consequat. Morbi dui arcu, consectetur et mauris et, congue aliquam mauris. Aenean
+        tortor tortor, sollicitudin sed nunc id, feugiat commodo purus. Maecenas efficitur lectus porta elit bibendum
+        viverra. Sed a tempus odio. Etiam vitae accumsan urna, quis congue erat. Proin molestie lorem diam, vitae
+        rhoncus ipsum gravida quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas in velit ac
+        eros dapibus suscipit. Cras vitae mauris vel turpis varius suscipit. In hac habitasse platea dictumst. Phasellus
+        dolor tortor, pretium et tincidunt bibendum, dictum sed diam. Donec odio magna, sollicitudin nec ullamcorper
+        sed, ultricies nec lectus. Curabitur aliquam sapien sed nulla suscipit placerat. Maecenas quis lorem ac felis
+        iaculis congue ac eu sapien. Ut sem odio, volutpat et sollicitudin quis, dictum at quam.
+    </p>
+    <p class="content">
+        Nam posuere non enim at consequat. Morbi dui arcu, consectetur et mauris et, congue aliquam mauris. Aenean
+        tortor tortor, sollicitudin sed nunc id, feugiat commodo purus. Maecenas efficitur lectus porta elit bibendum
+        viverra. Sed a tempus odio. Etiam vitae accumsan urna, quis congue erat. Proin molestie lorem diam, vitae
+        rhoncus ipsum gravida quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas in velit ac
+        eros dapibus suscipit. Cras vitae mauris vel turpis varius suscipit. In hac habitasse platea dictumst. Phasellus
+        dolor tortor, pretium et tincidunt bibendum, dictum sed diam. Donec odio magna, sollicitudin nec ullamcorper
+        sed, ultricies nec lectus. Curabitur aliquam sapien sed nulla suscipit placerat. Maecenas quis lorem ac felis
+        iaculis congue ac eu sapien. Ut sem odio, volutpat et sollicitudin quis, dictum at quam.
+    </p>
+    <p class="content">
+        Nam posuere non enim at consequat. Morbi dui arcu, consectetur et mauris et, congue aliquam mauris. Aenean
+        tortor tortor, sollicitudin sed nunc id, feugiat commodo purus. Maecenas efficitur lectus porta elit bibendum
+        viverra. Sed a tempus odio. Etiam vitae accumsan urna, quis congue erat. Proin molestie lorem diam, vitae
+        rhoncus ipsum gravida quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas in velit ac
+        eros dapibus suscipit. Cras vitae mauris vel turpis varius suscipit. In hac habitasse platea dictumst. Phasellus
+        dolor tortor, pretium et tincidunt bibendum, dictum sed diam. Donec odio magna, sollicitudin nec ullamcorper
+        sed, ultricies nec lectus. Curabitur aliquam sapien sed nulla suscipit placerat. Maecenas quis lorem ac felis
+        iaculis congue ac eu sapien. Ut sem odio, volutpat et sollicitudin quis, dictum at quam.
+    </p>
+    <p class="content">
+        Nam posuere non enim at consequat. Morbi dui arcu, consectetur et mauris et, congue aliquam mauris. Aenean
+        tortor tortor, sollicitudin sed nunc id, feugiat commodo purus. Maecenas efficitur lectus porta elit bibendum
+        viverra. Sed a tempus odio. Etiam vitae accumsan urna, quis congue erat. Proin molestie lorem diam, vitae
+        rhoncus ipsum gravida quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas in velit ac
+        eros dapibus suscipit. Cras vitae mauris vel turpis varius suscipit. In hac habitasse platea dictumst. Phasellus
+        dolor tortor, pretium et tincidunt bibendum, dictum sed diam. Donec odio magna, sollicitudin nec ullamcorper
+        sed, ultricies nec lectus. Curabitur aliquam sapien sed nulla suscipit placerat. Maecenas quis lorem ac felis
+        iaculis congue ac eu sapien. Ut sem odio, volutpat et sollicitudin quis, dictum at quam.
+    </p>
 
 
+    <br>
 
-    <img src="https://burgerking.hu/sites/burgerking.hu/files/BK_Web_RebelWhopper%2Bpecset_300x270px.png"
-        alt="tasty burger">
+
 
 
 

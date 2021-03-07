@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Hansief";
+    src: url("fonts/Hansief.otf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h1{
+    color: lightblue;
+}
+
+.content {
+    font-family: 'Roboto', sans-serif;   
+    text-align: justify;
+    line-height: 25px;
+}
+#bio_header{
+    color:lightseagreen;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+}
+#img-1{
+    position:sticky;
+    top:50px
+}
+.bold{
+    font-weight: bold;
+}
+ul.menu {
+    position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  ul.menu li {float: left;
+}
+
+  ul.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+    text-decoration: none;
+    width:50px;
+    font-size: 20px;
+
+  }
+#login-link{
+    color:green;
+}
+
+
+
+ul.menu li a:hover:not(.active) {background-color: #111;}
+
+ul.menu li a.active {background-color: #4CAF50;}
+
+ul.menu li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
