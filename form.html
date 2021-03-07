@@ -22,11 +22,14 @@
                     </div>
                     <div class="form-group">
                         <label for="">Mennyiség</label>
-                        <input type="number" name="amount-input" class="form-control">
+                        <input type="number" name="amount-input" class="form-control" value="1">
+                        <small class="form-text text-muted">
+                            Minimum 1, maximum 10db.
+                        </small>
                     </div>
                     <div class="form-group">
                         Fizetendő:
-                        <span class="show-amount">0</span> Ft
+                        <span class="show-amount" value=>0</span> Ft
                     </div>
                     <button onclick="calculate()" type="button" class="btn btn-primary">Megrendelés</button>
                 </form>
