@@ -18,7 +18,7 @@
                 <form action="">
                     <div class="form-group">
                         <label for="">Feltét</label>
-                        <input type="text" name="top-input" class="form-control">
+                        <input id="topInput" type="text" name="top-input" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="">Mennyiség</label>
@@ -31,7 +31,26 @@
                         Fizetendő:
                         <span class="show-amount" value=>0</span> Ft
                     </div>
+                    +
+                    <div class="form-group">
+                        Szállítási díj:
+                        <span class="show-deliveryprice">500</span> Ft
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        Összesen:
+                        <span class="show-total" >0</span> Ft
+                    </div>
                     <button onclick="calculate()" type="button" class="btn btn-primary">Megrendelés</button>
+                    <footer>
+                    <small  id="deliveryFee" class="form-text text-muted">Házhozszállítás: 5000Ft felett ingyenes,
+                        ehhez még <span class="show-leftprice">0</span>Ft rendelés szükséges.
+                    </small>
+                    <br>
+                    <small  id="deliveryFeeFree"  class="form-text text-muted">
+                        Önnek már Ingyenes a szállítás! :)
+                    </small>
+                </footer>
                 </form>
             </div>
             <div class="col-3"></div>
