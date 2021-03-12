@@ -1,3 +1,5 @@
+
+
 let price = 1350;
 let deliveryPrice = 500;
 let amountInput = document.querySelector("input[name='amount-input']");
@@ -6,7 +8,39 @@ let showAmount = document.querySelector("span.show-amount");
 let deliveryPriceBlock = document.querySelector("span.show-deliveryprice");
 let deliveryLeftPrice = document.querySelector("span.show-leftprice");
 document.getElementById("deliveryFeeFree").style.visibility = 'hidden';
+calculate();
 
+
+
+
+let orderForm = document.querySelector("#orderForm");
+orderForm.addEventListener("submit",function(ev){
+    
+    ev.preventDefault();
+    
+    let inputs = this.querySelectorAll("input");
+    let values = {};
+    
+    for (let i = 0; i < inputs.length; i++) {
+       values[inputs[i].name] = inputs[i].value;    
+    }
+
+    console.log(values);
+});
+
+
+//info
+
+let alertCloseButtons = document.querySelectorAll(".close[data-dismiss='alert']");
+let alertCloseEventHandlerFunction = function(ev) {
+    this.parentElement.style.display = "none";
+};
+
+
+for (let k = 0; k < alertCloseButtons.length; k++) {
+
+    alertCloseButtons[k].addEventListener("click",alertCloseEventHandlerFunction);
+}
 
 
 
@@ -18,6 +52,8 @@ function calculate() {
         amountNumber = 0;
     }
     totalPriceCalc(showSumPrice(price, amountNumber));
+
+    massModify("input","title","haha");
 
 }
 
@@ -44,7 +80,7 @@ function totalPriceCalc(price = 1350) {
     
         document.getElementById("deliveryFee").style.visibility = 'hidden';
         document.getElementById("deliveryFeeFree").style.visibility = 'visible';
-        amountTotal.innerHTML = price
+        amountTotal.innerHTML = price;
         deliveryPriceBlock.innerHTML = 0;
         
 
@@ -56,5 +92,16 @@ function totalPriceCalc(price = 1350) {
         deliveryLeftPrice.innerHTML = 5000 - price;
     }
 }
+function massModify(selector, attribute,value){
+    console.log("selector: "+selector);
+    let nodeList = document.querySelectorAll(selector);
+    console.log(nodeList);
+    for(let y = 0; y < nodeList.length; y++){
+        nodeList[y][attribute] = value;
+    }
+
+}
+
+
 
 
