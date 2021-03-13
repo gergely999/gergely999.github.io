@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "firstName": "Big",
+            "lastName": " Tom",
+            "eletkor": 20
+        },
+        {
+            "id": 2,
+            "firstName": "Small",
+            "lastName": " Tom",
+            "eletkor": 33
+        },
+        {
+            "id": 3,
+            "firstName": "Ödön",
+            "lastName": " Tom",
+            "eletkor": 50
+        }
+    ]
+}
