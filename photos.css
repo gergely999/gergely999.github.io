@@ -1,0 +1,26 @@
+img {
+    /*
+    30% + 30% + 30% 
+    marad 10%
+    3 elemre leosztva jobb és bal margóval az összesen 6
+    10 / 6 = 1.666%
+    10% elosztása 6 részre
+    */
+    width: 30%;
+    margin: calc(10%/6);
+    transition: transform 0.15s;
+}
+
+nav {
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    text-transform:uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    margin-left: calc(10%6);
+    padding: 1em 0;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
